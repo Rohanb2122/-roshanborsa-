@@ -1,0 +1,158 @@
+/* मुख्य रंग */
+:root {
+    --primary: #6a0dad;
+    --gold: #d4af37;
+    --bg1: #f7e9ff;
+    --bg2: #fff8e1;
+}
+
+/* बेसिक सेटअप */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, var(--bg1), var(--bg2));
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+/* मेनू कार्ड */
+.menu-card {
+    width: 380px;
+    background-color: #ffffff;
+    border: 5px solid var(--gold);
+    padding: 25px 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+    margin: 30px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+/* लोगो */
+.logo {
+    width: 90px;
+    height: 90px;
+    margin: 0 auto 15px;
+    background: url('assets/logo.png') no-repeat center;
+    background-size: contain;
+}
+
+/* हेडिंग */
+h1 {
+    font-family: 'Great Vibes', cursive;
+    color: var(--primary);
+    font-size: 2.8em;
+    margin-bottom: 5px;
+}
+
+.slogan {
+    font-size: 1em;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.owner {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.tagline {
+    font-style: italic;
+    color: var(--primary);
+    font-size: 1.3em;
+    margin-bottom: 20px;
+}
+
+/* सेक्शन टायटल */
+.section-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5em;
+    color: var(--primary);
+    margin-top: 15px;
+    margin-bottom: 12px;
+    position: relative;
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.section-title::before,
+.section-title::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background: var(--gold);
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.section-title::before {
+    left: -40px;
+}
+
+.section-title::after {
+    right: -40px;
+}
+
+/* मेनू लिस्ट */
+.menu-list {
+    width: 100%;
+    max-width: 300px;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto 10px;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    color: #333;
+}
+
+.item-name {
+    flex-grow: 1;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.dots {
+    flex-grow: 1;
+    border-bottom: 1px dotted #ccc;
+    margin: 0 5px;
+    min-width: 10px;
+}
+
+.price {
+    text-align: right;
+    white-space: nowrap;
+    font-weight: bold;
+    color: var(--primary);
+}
+
+/* संपर्क माहिती */
+.contact-info {
+    font-size: 0.9em;
+    color: #555;
+    margin-top: 25px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+/* प्रिंट डिझाईन */
+@media print {
+    body { background: none; }
+    .menu-card {
+        background: #fff;
+        box-shadow: none;
+        border: 6px double var(--gold);
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+}
