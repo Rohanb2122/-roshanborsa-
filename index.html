@@ -8,17 +8,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <style>
-        /* मेनू कार्डसाठी पोझिशनिंग */
-        .menu-card {
-            position: relative; /* स्टिकरला याच्या संदर्भात पोझिशन करण्यासाठी */
-            overflow: hidden; /* स्टिकर बाहेर गेल्यास कापण्यासाठी */
-        }
-
         /* व्हिडिओसाठी स्टाईल */
         .video-container {
             position: relative;
             width: 100%;
-            padding-top: 56.25%; 
+            padding-top: 56.25%; /* 16:9 Aspect Ratio */
             margin-bottom: 20px;
         }
         .video-container iframe {
@@ -30,32 +24,34 @@
             border: 0;
         }
 
-        /* स्टिकर फोटोसाठी स्टाईल */
-        .sticker-image {
-            position: absolute;
-            top: 15px; /* वरून अंतर */
-            right: 15px; /* उजवीकडून अंतर */
-            width: 80px; /* फोटोची रुंदी (आवश्यकतेनुसार बदला) */
-            height: auto; /* उंची आपोआप ॲडजस्ट होईल */
-            z-index: 10; /* स्टिकर वरच्या बाजूला दिसेल */
+        /* Hotela chya navakhali gap kami karnyaasathi */
+        .menu-content h1 {
+            margin-bottom: 5px; /* Hotela chya navakhali gap kami kela */
         }
-
-        /* हॉटेलच्या नावाखालील गॅप कमी करण्यासाठी */
-        .menu-content h1 { margin-bottom: 5px; }
-        .menu-content .slogan { margin-top: 0; margin-bottom: 5px; }
-        .menu-content .owner { margin-top: 0; margin-bottom: 5px; }
-        .menu-content .tagline { margin-top: 0; margin-bottom: 20px; }
-        .section-title { margin-top: 20px; margin-bottom: 10px; }
+        .menu-content .slogan {
+            margin-top: 0px;
+            margin-bottom: 5px; /* Slogan khali gap kami kela */
+        }
+        .menu-content .owner {
+            margin-top: 0px;
+            margin-bottom: 5px; /* Owner khali gap kami kela */
+        }
+        .menu-content .tagline {
+            margin-top: 0px;
+            margin-bottom: 20px; /* Tagline khali gap kami kela (Menu title pasun antar thevnyaasathi) */
+        }
+        .section-title {
+            margin-top: 20px; /* Section titleschya var gap thodasa vadhvla */
+            margin-bottom: 10px; /* Section titleschya khali gap kami kela */
+        }
     </style>
 </head>
 <body>
 
     <div class="menu-card">
 
-        <img src="https://drive.google.com/file/d/1w3j8v42mGhD4GQdX_GDGIUTDWKDvsUkm/view?usp=drivesdk" alt="Sticker" class="sticker-image">
-
         <div class="video-container">
-            <iframe src="https://drive.google.com/file/d/1w3j8v42mGhD4GQdX_GDGIUTDWKDvsUkm/preview" allow="autoplay" frameborder="0"></iframe>
+            <iframe src="https://drive.google.com/file/d/1YyFb2ir0wNjEijqjQIWjg7FWsz7DltiT/preview" allow="autoplay" frameborder="0"></iframe>
         </div>
 
         <div class="logo"></div>
